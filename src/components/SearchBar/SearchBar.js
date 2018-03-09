@@ -1,18 +1,17 @@
 import React from 'react';
 import './SearchBar.css';
 
-
 let sortByOptions = {
   'Best Match': 'best_match',
   'Highest Rated': 'rating',
   'Most Reviewed': 'review_count'
-}
+};
 
 getSortByClass(sortByOption){
   if (this.state.sort === sortByOption){
-    return 'active';
+    return 'active'
   } else {
-    return '';
+    return ''
   }
 };
 
@@ -53,7 +52,6 @@ React.Component {
 
   render(){
     return (
-    searchYelp = this.searchYelp();
       <div className="SearchBar">
         <div className="SearchBar-sort-options">
           <ul>
